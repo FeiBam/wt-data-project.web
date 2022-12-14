@@ -1,46 +1,79 @@
-# wt-data-project.web.vue
+# wt-data-project.web
+A visualization web application for wt-data-project.
 
-This template should help get you started developing with Vue 3 in Vite.
+<div align="center">
+   <img src="https://github.com/ControlNet/wt-data-project.web/raw/dev/img/logo400.png" alt="">
+</div>
 
-## Recommended IDE Setup
+<table>
+    <tr>
+        <th>Repository</th>
+        <th>Info</th>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/ControlNet/wt-data-project.data">wt-data-project.data</a></td>
+        <td>
+            <img src="https://img.shields.io/github/forks/ControlNet/wt-data-project.data?style=flat-square" alt="">
+            <img src="https://img.shields.io/github/stars/ControlNet/wt-data-project.data?style=flat-square" alt="">
+            <img src="https://img.shields.io/github/last-commit/ControlNet/wt-data-project.data/master?style=flat-square" alt="">
+        </td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/ControlNet/wt-data-project.web">wt-data-project.web</a></td>
+        <td>
+            <img src="https://img.shields.io/github/forks/ControlNet/wt-data-project.web?style=flat-square" alt="">
+            <img src="https://img.shields.io/github/stars/ControlNet/wt-data-project.web?style=flat-square" alt="">
+            <img src="https://img.shields.io/github/last-commit/ControlNet/wt-data-project.web?style=flat-square" alt="">
+            <img src="https://img.shields.io/github/workflow/status/ControlNet/wt-data-project.web/build?style=flat-square" alt="">
+            <img src="https://img.shields.io/website?style=flat-square&up_message=online&url=https%3A%2F%2Fwt.controlnet.space" alt="">
+        </td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/ControlNet/wt-data-project.visualization">wt-data-project.visualization</a></td>
+        <td>
+            <img src="https://img.shields.io/github/forks/ControlNet/wt-data-project.visualization?style=flat-square" alt="">
+            <img src="https://img.shields.io/github/stars/ControlNet/wt-data-project.visualization?style=flat-square" alt="">
+            <img src="https://img.shields.io/github/last-commit/ControlNet/wt-data-project.visualization/master?style=flat-square" alt="">
+        </td>
+    </tr>
+</table>
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Webpage: [wt.controlnet.space](https://wt.controlnet.space)
 
-## Type Support for `.vue` Imports in TS
+## Features
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+Mouse tooltip in heatmap.
+![brheatmap-tooltip](https://github.com/ControlNet/wt-data-project.web/blob/main/img/brheatmap-tooltip.gif)
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+Click to check the data trends.
+![brheatmap-click](https://github.com/ControlNet/wt-data-project.web/blob/main/img/brheatmap-click.gif)
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+View raw data.
+![brheatmap-raws](https://github.com/ControlNet/wt-data-project.web/blob/main/img/brheatmap-raws.gif)
 
-## Customize configuration
+## Todo List
+<div id="todo-list-section">
+This repo is still in progress.
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+ - [x] Battle rating heatmap 
+    - [x] Interactive trend graph
+        - [x] Compatible for "battles" data
+        - [x] Mouse tooltip
+        - [ ] Adjustable date range
+    - [x] Display table with selected data  
+    - [x] Mouse tooltip
+    - [ ] New measurement: average repair fees
+    - [x] Improve color map
+    - [ ] Use N/A to represent missing data rather than 0
+ - [x] Trend graph
+    - [ ] Mouse tooltip
+ - [ ] Dark mode
+ - [ ] Other animated graphs
+</div>
 
-## Project Setup
+## Acknowledge
 
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
+- [kroeden](https://github.com/kroeden) for making logo.
+- [Gaijin](https://warthunder.com/) for developing War Thunder.
+- [thunderskill](http://thunderskill.com/en) for WT statistics data.
+- [FlareFlo](https://github.com/FlareFlo) for providing vehicle name matching.
