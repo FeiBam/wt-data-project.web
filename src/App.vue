@@ -3,8 +3,9 @@
 </script>
 
 <template>
-  <el-container>
+  <el-container direction="vertical">
     <navbarView></navbarView>
+    <RouterView></RouterView>
   </el-container>
   <!----
   <header>
